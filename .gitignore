@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.vercel/
+*.log
+dist/
+.DS_Store
+.env
+.env.*
+!.env.example
+!.env.local.example
+*.key
+*.pem
+*.p12
+secrets.json
+credentials.json
+service-account*.json

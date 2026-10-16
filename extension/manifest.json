@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Hintly — AI Meeting Assistant",
+  "version": "0.1.0",
+  "description": "Real-time AI hints, action items, and tone coaching for Google Meet.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://meet.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Hintly"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
